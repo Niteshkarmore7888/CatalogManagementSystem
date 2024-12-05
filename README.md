@@ -6,22 +6,22 @@ Spring Boot: Version 3.x or higher
 MySQL: Installed and running on your machine
 Maven: For managing project dependencies
 
-#Setup Instructions
+# Setup Instructions
 Clone the Repository
 Clone the project to your local machine using Git:https://github.com/Niteshkarmore7888/CatalogManagementSystem.git
 
-#Configure Database
+# Configure Database
 Update the application.properties file with your MySQL database credentials:
 spring.datasource.url=jdbc:mysql://localhost:3306/TwinleavsDb?createTableIfNotExists=true
 spring.datasource.username=root
 spring.datasource.password=12345
 spring.jpa.hibernate.ddl-auto=update
 
-#Run the Project
+# Run the Project
 Use the following Maven command to run the application:
 mvn spring-boot:run
 
-#Technologies Used
+# Technologies Used
 Spring Boot: Framework for building Java applications with minimal configuration
 Spring Data JPA: Simplifies database interactions with MySQL using JPA repositories
 Hibernate Validator: Used for input validation using annotations
@@ -42,32 +42,30 @@ Setup Instructions
 Clone the Repository
 Clone the project to your local machine using Git:
 
-bash
-Copy code
+
 git clone https://github.com/yourusername/catalog-management-system.git
 cd catalog-management-system
 Configure Database
 Update the application.properties file with your MySQL database credentials:
 
-properties
-Copy code
+# properties
+
 spring.datasource.url=jdbc:mysql://localhost:3306/catalog_db
 spring.datasource.username=your_username
 spring.datasource.password=your_password
-Run the Project
-Use the following Maven command to run the application:
 
-bash
-Copy code
+# Run the Project
+Use the following Maven command to run the application:
 mvn spring-boot:run
-Technologies Used
+
+# Technologies Used
 Spring Boot: Framework for building Java applications with minimal configuration
 Spring Data JPA: Simplifies database interactions with MySQL using JPA repositories
 Hibernate Validator: Used for input validation using annotations
 MySQL: Relational database management system for storing product data
 Lombok: Reduces boilerplate code (getters, setters, constructors) in Java classes
 
-#Product Entity
+# Product Entity
 The Product entity represents a product in the catalog with the following fields:
 id: Unique identifier for each product
 name: The name of the product
@@ -78,7 +76,7 @@ quantity: The number of items in stock
 category: The category of the product (e.g., Electronics, Furniture)
 dateAdded: The date the product was added to the catalog
 
-#Validation
+# Validation
 Fields in the Product entity are validated using annotations:
 
 @NotBlank: Ensures the field is not empty
