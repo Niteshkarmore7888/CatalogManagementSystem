@@ -38,15 +38,6 @@ cd catalog-management-system
 Configure Database
 Update the application.properties file with your MySQL database credentials:
 
-# properties
-
-spring.datasource.url=jdbc:mysql://localhost:3306/catalog_db
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-
-# Run the Project
-Use the following Maven command to run the application:
-mvn spring-boot:run
 
 # Technologies Used
 Spring Boot: Framework for building Java applications with minimal configuration
