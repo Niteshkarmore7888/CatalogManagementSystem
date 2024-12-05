@@ -21,16 +21,6 @@ spring.jpa.hibernate.ddl-auto=update
 Use the following Maven command to run the application:
 mvn spring-boot:run
 
-# Technologies Used
-Spring Boot: Framework for building Java applications with minimal configuration
-Spring Data JPA: Simplifies database interactions with MySQL using JPA repositories
-Hibernate Validator: Used for input validation using annotations
-MySQL: Relational database management system for storing product data
-Lombok: Reduces boilerplate code (getters, setters, constructors) in Java classes
- 
-Here’s the content formatted perfectly for a GitHub README file:
-
-Catalog Management System
 Requirements
 Before running the project, ensure you have the following installed:
 
