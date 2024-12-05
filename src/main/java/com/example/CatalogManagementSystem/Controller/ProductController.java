@@ -22,12 +22,12 @@ public class ProductController {
     ProductService productService;
 
     @PostMapping("/add")
-    public ResponseEntity addProduct(@RequestParam ProductRequestDto productRequestDto){
+    public ResponseEntity addProduct(@RequestBody ProductRequestDto productRequestDto){
         ProductResponseDto response =productService.addProduct(productRequestDto);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
-    @GetMapping("/id")
+    @GetMapping("/id{id}")
     public  ResponseEntity<ProductResponseDto> getById( @RequestParam @Min(value = 1, message = "Product ID must be greater than 0") int id){
         ProductResponseDto productResponse=productService.getById(id);
         return ResponseEntity.ok(productResponse);
